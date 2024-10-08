@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e09f426-0b19-4430-806e-763ba4355db2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AddressBuilder/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wb2demos/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wb2demos/src/main/java/com/pluralsight/Demo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wb2demos/src/main/java/com/pluralsight/Loops1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wb2demos/src/main/java/com/pluralsight/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wb2demos/src/main/java/com/pluralsight/PersonProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RollTheDice/src/main/java/com/pluralsight/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wb2demos/src/main/java/com/pluralsight/Array1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheaterReservations" beforeDir="false" afterPath="$PROJECT_DIR$/TheaterReservations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheaterReservations/src/main/java/com/pluralsight/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TheaterReservations/src/main/java/com/pluralsight/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +27,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Student/pluralsight/java-develop/workbook-2/wb2-exercises"
+    "last_opened_file_path": "C:/Users/Student/pluralsight/java-develop/workbook-2/wb2-exercises/AddressBuilder"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
