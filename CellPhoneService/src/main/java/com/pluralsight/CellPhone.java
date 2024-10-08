@@ -1,19 +1,28 @@
 package com.pluralsight;
 
-public class CellPhone {
+public class git CellPhone {
     private int serialNumber;
     private String model;
     private String carrier;
     private String phoneNumber;
     private String owner;
 
-    //
+    // Parameterless constructor with default values
     public CellPhone() {
         this.serialNumber = 0;
         this.model = "";
         this.carrier = "";
         this.phoneNumber = "";
         this.owner = "";
+    }
+
+    // Overloaded constructor with parameters
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner) {
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
     }
 
     // Getters and Setters
@@ -60,5 +69,10 @@ public class CellPhone {
     // Method to dial a phone number
     public void dial(String phoneNumber) {
         System.out.println(owner + "'s phone is calling " + phoneNumber);
+    }
+
+    // Overloaded dial method that accepts a CellPhone object
+    public void dial(CellPhone phone) {
+        System.out.println(owner + "'s phone is calling " + phone.getPhoneNumber());
     }
 }
