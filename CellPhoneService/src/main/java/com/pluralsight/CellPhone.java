@@ -7,7 +7,7 @@ public class CellPhone {
     private String phoneNumber;
     private String owner;
 
-    // Parameterless constructor with default values
+    //
     public CellPhone() {
         this.serialNumber = 0;
         this.model = "";
@@ -55,5 +55,10 @@ public class CellPhone {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    // Method to dial a phone number
+    public void dial(String phoneNumber) {
+        System.out.println(owner + "'s phone is calling " + phoneNumber);
     }
 }

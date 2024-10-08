@@ -5,33 +5,56 @@ import java.util.Scanner;
 public class CellPhoneApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        CellPhone cellPhone = new CellPhone();
 
-        // Prompting the user for cell phone information
-        System.out.print("What is the serial number? ");
-        cellPhone.setSerialNumber(scanner.nextInt());
+        //  first cell phone
+        CellPhone cellPhone1 = new CellPhone();
+        System.out.print("What is the serial number for phone 1? ");
+        cellPhone1.setSerialNumber(scanner.nextInt());
         scanner.nextLine(); // Consume newline
-
         System.out.print("What model is the phone? ");
-        cellPhone.setModel(scanner.nextLine());
-
+        cellPhone1.setModel(scanner.nextLine());
         System.out.print("Who is the carrier? ");
-        cellPhone.setCarrier(scanner.nextLine());
-
+        cellPhone1.setCarrier(scanner.nextLine());
         System.out.print("What is the phone number? ");
-        cellPhone.setPhoneNumber(scanner.nextLine());
-
+        cellPhone1.setPhoneNumber(scanner.nextLine());
         System.out.print("Who is the owner of the phone? ");
-        cellPhone.setOwner(scanner.nextLine());
+        cellPhone1.setOwner(scanner.nextLine());
 
-        // Display the entered information
-        System.out.println("\nCell Phone Information:");
-        System.out.println("Serial Number: " + cellPhone.getSerialNumber());
-        System.out.println("Model: " + cellPhone.getModel());
-        System.out.println("Carrier: " + cellPhone.getCarrier());
-        System.out.println("Phone Number: " + cellPhone.getPhoneNumber());
-        System.out.println("Owner: " + cellPhone.getOwner());
+        //  second cell phone
+        CellPhone cellPhone2 = new CellPhone();
+        System.out.print("\nWhat is the serial number for phone 2? ");
+        cellPhone2.setSerialNumber(scanner.nextInt());
+        scanner.nextLine(); // Consume newline
+        System.out.print("What model is the phone? ");
+        cellPhone2.setModel(scanner.nextLine());
+        System.out.print("Who is the carrier? ");
+        cellPhone2.setCarrier(scanner.nextLine());
+        System.out.print("What is the phone number? ");
+        cellPhone2.setPhoneNumber(scanner.nextLine());
+        System.out.print("Who is the owner of the phone? ");
+        cellPhone2.setOwner(scanner.nextLine());
+
+        // Display information about both cell phones
+        display(cellPhone1);
+        display(cellPhone2);
+
+        // First cell phone dials the second one
+        cellPhone1.dial(cellPhone2.getPhoneNumber());
+
+        // Second cell phone dials the first one
+        cellPhone2.dial(cellPhone1.getPhoneNumber());
 
         scanner.close();
     }
+
+    // Static method to display cell phone information
+    public static void display(CellPhone phone) {
+        System.out.println("\nCell Phone Information:");
+        System.out.println("Serial Number: " + phone.getSerialNumber());
+        System.out.println("Model: " + phone.getModel());
+        System.out.println("Carrier: " + phone.getCarrier());
+        System.out.println("Phone Number: " + phone.getPhoneNumber());
+        System.out.println("Owner: " + phone.getOwner());
+    }
 }
+
